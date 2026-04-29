@@ -65,7 +65,7 @@ the pipeline structure locally. Results saved to `artifacts/logs/`.
 | RAG Enhanced (k=3) | 15%   | 0.1061  | 0.8428    |
 | Noisy Baseline     | 20%   | 0.0432  | 0.7929    |
 
-### Output files explained
+### Output files explained [hidden]
 
 | File                                         | What it contains                                    |
 | -------------------------------------------- | --------------------------------------------------- |
