@@ -1,0 +1,27 @@
+# configs/default.yaml
+
+seed: 42
+
+data:
+  dataset: "openI"
+  max_samples: 200        
+  train_ratio: 0.70
+  val_ratio: 0.15
+
+noise:
+  level: 0.10             # 10% noise level for baseline, test 0.05, 0.10, 0.15
+
+model:
+  name: "facebook/bart-large-cnn"
+  max_new_tokens: 128
+  min_new_tokens: 20
+
+rag:
+  embedding_model: "all-MiniLM-L6-v2"
+  top_k: 3
+
+evaluation:
+  metrics:
+    - rouge_l
+    - bertscore
+  output_dir: "artifacts/logs"

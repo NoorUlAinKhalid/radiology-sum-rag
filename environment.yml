@@ -1,0 +1,29 @@
+name: cs875-project
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+
+dependencies:
+  # Conda-managed packages
+  - python=3.10
+  - pip
+  - jupyter
+  - numpy=1.26.4
+  - pandas=2.2.2
+  - scikit-learn=1.4.2
+
+  # pip-managed packages
+  - pip:
+      - torch==2.1.0
+      - transformers==4.40.0
+      - datasets==2.19.0
+      - sentence-transformers==2.7.0
+      - rouge-score==0.1.2
+      - bert-score==0.3.13
+      - tqdm==4.66.4
+      - lxml==4.9.3
+      - beautifulsoup4==4.12.3
+      - python-dotenv==1.0.1
+      - pyyaml==6.0.1
+      - accelerate==0.29.3
