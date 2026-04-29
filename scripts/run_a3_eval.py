@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 run_a3_diagnostics.py — A3 Evaluation & Diagnostic Analysis Pipeline
 

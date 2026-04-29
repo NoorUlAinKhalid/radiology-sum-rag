@@ -277,11 +277,11 @@ from src.data.noise_injection import inject_noise, OCR_SUBSTITUTIONS
 # rag_model.py        — SimpleRAG (SentenceTransformer cosine similarity)
 from src.models.rag_model import SimpleRAG
 
-# run_a3_diagnostics  — mock_summarize() rule-based summarizer
+# run_a3_eval.py  — mock_summarize() rule-based summarizer
 #   We import it directly so it is the exact same function used in your pipeline.
 import importlib.util, types
-_diag_path = os.path.join(PROJECT_ROOT, "scripts", "run_a3_diagnostics.py")
-_spec = importlib.util.spec_from_file_location("run_a3_diagnostics", _diag_path)
+_diag_path = os.path.join(PROJECT_ROOT, "scripts", "run_a3_eval.py")
+_spec = importlib.util.spec_from_file_location("run_a3_eval.py", _diag_path)
 _diag_mod = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(_diag_mod)
 mock_summarize = _diag_mod.mock_summarize
